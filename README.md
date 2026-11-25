@@ -19,6 +19,11 @@ It **can be revived** with **FirstChip MpTools 2022-06-01** using a **slow NAND 
 The stick only stores your custom temperature programs (FAT32; the cooktop does not read NTFS). The cooktop does not
 need it to work and it holds no cooktop firmware.
 
+> ⚠️ **Don't keep the stick plugged into the cooktop.** In the owner's experience the stick dies when it stays in the
+> port all the time — most likely from heat next to the induction coil and/or the coil's electromagnetic field
+> (not proven, but the cooktop is the only place it lived permanently). **Plug it in only to save or load programs,
+> then take it out.**
+
 ## Symptoms
 
 - Mac / Windows / the cooktop do not see the stick, or the cooktop says it is "not formatted".
@@ -107,6 +112,10 @@ fixed capacity (e.g. 3840 MB) and keep 100 ns + Quality.
 5. OK → Refresh → Start (~1,5 мин, «Succeed»).
 6. Сразу после прошивки может показывать 0 байт — **вынуть и вставить** (или перезагрузить ПК). Итог: VID 346D:5678,
    FAT32 ~8 ГБ, работает в плите.
+
+⚠️ **Не держите флешку постоянно вставленной в плиту.** По опыту владельца она ломается, когда всё время стоит в
+порту, — видимо, от нагрева рядом с индукционной катушкой и/или от её поля (не доказано, но постоянно флешка жила
+только в плите). **Вставляйте её только чтобы записать или загрузить программы, потом вынимайте.**
 
 **Не тратьте время:** версия 2024-02-21 даёт ошибку 23 «电压设定错误» (напряжение); версия 2021-10-24 «прошивает»,
 но флешка живёт только до переподключения. Плита флешку не ломает. Подробности — в английской части выше.
